@@ -1,4 +1,4 @@
-import { GameState, Card, CardType, SpecialCardType } from './types';
+import { GameState, Card, CardType, SpecialCardType } from '../types';
 // import mathIntegal from 'mathjs-simple-integral';
 import * as math from 'mathjs';
 // ... cutFunction (from previous example)

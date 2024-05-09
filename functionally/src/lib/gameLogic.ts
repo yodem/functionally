@@ -1,4 +1,4 @@
-import { actionFunctions } from './cardActions';
+import { actionFunctions } from './cards/cardActions';
 import { Player, Card, CardType, GameState, SpecialCardType } from './types';
 import * as math from 'mathjs';
 

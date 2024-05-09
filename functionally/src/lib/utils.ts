@@ -1,5 +1,3 @@
-import { initializeGame as gameStateInit } from '../redux/gameSlice';
-import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid'; // For generating card IDs
 import { Card, CardType, GameState, Player } from './types';
 
@@ -21,8 +19,6 @@ const createSpecialActionDeck = (): Card[] => {
   }));
 };
 const initializeGame = () => {
-  const dispatch = useDispatch();
-
   // ... Logic to create decks (example: number cards)
   const createDeck = (type: CardType, length: number): Card[] => {
     return Array.from({ length }, (_, i) => ({
@@ -51,10 +47,20 @@ const initializeGame = () => {
     currentPlayer: players[0].name,
     playedCards: [],
   };
-
-  dispatch(gameStateInit(newGameState));
 };
 
 const drawCards = (player: Player, deck: CardType, numCards: number) => {
   // ... (Similar to the previous example, accessing state via useSelector)
+};
+
+export const shuffleArray = <T>(array: T[]): T[] => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
+export const getRandomCard = (cards: Card[]) => {
+  return cards[Math.floor(Math.random() * cards.length)];
 };
