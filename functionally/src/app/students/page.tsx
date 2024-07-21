@@ -2,7 +2,7 @@
 // import { fetchStudents } from '@/lib/students/fetchStudents';
 import { Student } from '@/lib/types';
 import { collection, onSnapshot } from 'firebase/firestore';
-import { SetStateAction, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { db } from '../firebaseConfig';
 
 const Page = () => {

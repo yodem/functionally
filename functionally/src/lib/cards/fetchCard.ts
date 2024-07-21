@@ -1,7 +1,6 @@
 import { db } from '@/app/firebaseConfig';
 import { doc, getDoc } from 'firebase/firestore';
 import { Card } from '../types';
-import { log } from 'console';
 
 export async function fetchCardById(cardId: string): Promise<Card> {
   try {

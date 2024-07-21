@@ -7,6 +7,14 @@ export enum CardType {
   // ... Add more specific special types? (Cut, ReplaceNumber)
 }
 
+export enum CardImage {
+  Function = 'function',
+  Number = 'number',
+  Action = 'special', // Generic action
+  Special = 'special',
+  // ... Add more specific special types? (Cut, ReplaceNumber)
+}
+
 export enum SpecialCardType {
   // Integral = 'Integral',
   Derivative = 'Derivative',

@@ -1,5 +1,5 @@
 import { actionFunctions } from './cards/cardActions';
-import { Player, Card, CardType, GameState, SpecialCardType } from './types';
+import { Player, Card, CardType, SpecialCardType } from './types';
 import * as math from 'mathjs';
 
 const calculateYValue = (

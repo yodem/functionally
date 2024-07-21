@@ -1,0 +1,21 @@
+{
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "security.workspace.trust.untrustedFiles": "open"
+}

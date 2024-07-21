@@ -1,22 +1,7 @@
 // Import the functions you need from the SDKs you need
-import { fetchCards } from '@/lib/cards/fetchCards';
-import { fetchStudents } from '@/lib/students/fetchStudents';
-import { CardType, GameState } from '@/lib/types';
-import { getRandomCard, shuffleArray } from '@/lib/utils';
 import { initializeApp } from 'firebase/app';
 // import { getAnalytics } from 'firebase/analytics';
-import {
-  Firestore,
-  addDoc,
-  collection,
-  deleteDoc,
-  doc,
-  getDocs,
-  getFirestore,
-  query,
-  where,
-  writeBatch,
-} from 'firebase/firestore';
+import { Firestore, getFirestore } from 'firebase/firestore';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 

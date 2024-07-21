@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { fetchStudents } from '@/lib/students/fetchStudents';
 import { Student } from '@/lib/types';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '@/app/firebaseConfig';

@@ -1,13 +1,10 @@
 import { fetchCardById } from '@/lib/cards/fetchCard';
+import { CardByType } from '@/components/Card/Card';
 
 const CardDetails = async ({ params: { id } }: { params: { id: string } }) => {
   const card = await fetchCardById(id);
-  return (
-    <div>
-      <p>Type: {card.type}</p>
-      <p>Value: {card.value}</p>
-    </div>
-  );
+
+  return <CardByType card={card} />;
 };
 
 export default CardDetails;
